@@ -11,7 +11,7 @@ body{
  background-color: #EB5757;
 }
 #home{
- background-image: url(/img/bghome.gif);
+ background-image: url(./img/bghome.gif);
  background-size: cover;
  background-repeat: no-repeat;
  background-position:top;
