@@ -236,6 +236,7 @@ body{
  left: 50%;
  font-weight: 900;
  font-family: 'ubuntu';
+ text-align: center;
  transform: translate(-50%, -50%);
  background-image: linear-gradient(#bb4e5500, #05284b);
 }
