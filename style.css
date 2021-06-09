@@ -212,6 +212,15 @@ body{
 }
 
 
+#contact{
+  background-image: url(./img/bghome.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:top;
+  z-index: -1;
+}
+
+
 
 
 #coming{
