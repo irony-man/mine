@@ -43,22 +43,47 @@
           <input type="email" class="formin" id="email">
           <label for="comment">Message</label>
           <textarea class="formin" rows="6" id="comment"></textarea>
-          <input type="button" class="consub" onclick="getvalue();" id="submit" value="Send">
+          <input type="button" class="consub" onclick="sendmail();" id="submit" value="Send">
       </div>
     </div>
     <div class="conbot">
     <p class="conpa">Designed & Developed by <strong style="color: #bb4e55;">Shivam Rai</strong></p>
     </div>
   </div>
-  <script type="text/javascript">
-    function getvalue()
-    {
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"> </script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+ 
+<script>
+     function sendmail(){
       var user= document.getElementById("user").value;
       var email= document.getElementById("email").value;
       var message= document.getElementById("comment").value;
-      var result="Name: "+user+"\nEmail: "+email+"\nMessage: "+message;
-      alert( result);
-    }
+      let result="Name: "+user+"\nEmail: "+email+"\nMessage: "+message;
+
+			Email.send({
+        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+				To: 'shivamrai0401@gmail.com',
+				From: "shivam0401rai@gmail.com",
+				Subject: "Respose from website..",
+				Body: result
+			}).then(
+				message =>{
+					//console.log (message);
+					if(message=='OK'){
+					alert('Your mail has been send. Thank you for connecting.');
+					}
+					else{
+						console.error (message);
+						alert('There is error at sending message. ')	
+					}
+				}
+			);
+		}
+    </script>
+ </script>
   </script>
 
 
