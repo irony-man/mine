@@ -198,7 +198,7 @@ body{
 }
 .bottombg{
  background-image: linear-gradient(#BB4E55, #bb4e5500);
- height: 50vh;
+ height: 400px;
  z-index: -1;
  text-align: center;
 }
@@ -213,15 +213,85 @@ body{
 
 
 #contact{
-  background-image: url(./img/bghome.jpg);
+  background-image: url(./img/bghomebottom.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position:top;
+  background-position:bottom;
   z-index: -1;
 }
 
+.cencon{
+  background-color: #ffffff30;
+  margin: 100px 15vw 0;
+  border-radius: 10px;
+  font-family: "ubuntu";
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.cencon h1{
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  color: white;
+  font-weight: 700;
+  transform: translate(-50%, 0);
+}
+.consub{
+  background-color: #BB4E55;
+  border-style: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  color: white;
+  font-weight: 600;
+  transform: translate(-50%, 0);
+  transition: ease 0.3s;
+}
+.consub:hover{
+  background-color: #b82932;
+}
 
+.conform{
+  padding: 50px;
+  color: #fff;
+  width: 100%;
+  margin: 80px 0;
+}
 
+.formin{
+  background-color: transparent;
+  padding:10px;
+  color: white;
+  display: flex;
+  width: 100%;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+.formin:focus{
+  background-color: transparent;
+  outline: 0;
+  border-color: #fff;
+  border: 0;
+  border-bottom: 1px solid #BB4E55;
+}
+
+.conbot{
+  position: relative;
+  height: 300px;
+}
+.conpa{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, 0%);
+  color: white;
+}
 
 #coming{
  background-image: url(./img/coming.jpg);
@@ -255,6 +325,9 @@ body{
   background-image: linear-gradient(#05284b00, #05284b 100px, #05284b 50%, #20323E 80%);
  }
  
+.cencon{
+  margin: 100px 5vw 0;
+}
  .bottombg{
   background-image: linear-gradient(#20323e, #20323E00);
  }
