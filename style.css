@@ -350,7 +350,8 @@ body {
 /*galaxy*/
 
 #galaxy {
-  background-image: url(https://docs.google.com/uc?id=1TB10BpW43CBbbfXvV8PzklAM9uH0oTte);
+  /*background-image: url(https://docs.google.com/uc?id=1TB10BpW43CBbbfXvV8PzklAM9uH0oTte);*/
+  background-image: url(./img/galaxybg.jpg);
   background-size:cover;
   background-repeat:no-repeat;
   height: 100vh;
@@ -414,35 +415,31 @@ body {
 }
 
 .popdet{
-  height: 80%;
-  width: 80%;
+  height: 384px;
+  width: 768px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-color: white;
 }
 
 .popi{
-  padding: 10px;
+  padding: 0px;
   position: relative;
 }
 #imgpop {
-  position: absolute;
-  top: 50%;
-  left: 0%;
-  transform: translate(0%,-50%);
   border: white 3px solid;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 .poptext{
   padding: 10px 0 0 10px;
   font-family: "ubuntu";
-  width: 50%;
-  height: 100%;
   background-color: rgba(255, 99, 71, 0.63);
+  width: auto;
+  height: auto;
 }
 
 .galastars p {
@@ -588,4 +585,9 @@ body {
     color: white;
     text-decoration: none;
   }
+  .popdet{
+    height: 768px;
+    width: 384px;
+  }
+  
 }
