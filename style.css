@@ -350,8 +350,7 @@ body {
 /*galaxy*/
 
 #galaxy {
-  /*background-image: url(https://docs.google.com/uc?id=1TB10BpW43CBbbfXvV8PzklAM9uH0oTte);*/
-  background-image: url(./img/galaxybg.jpg);
+  background-image: url(https://docs.google.com/uc?id=1TB10BpW43CBbbfXvV8PzklAM9uH0oTte);
   background-size:cover;
   background-repeat:no-repeat;
   height: 100vh;
