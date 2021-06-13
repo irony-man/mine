@@ -20,7 +20,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
   </script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>The Designing Engineer | Home</title>
   <link rel="icon" href="./img/logo-icon.png" type="image/x-icon">
@@ -29,63 +29,60 @@
 <body>
   <div id="contact">
     <div class="header container">
-      <a class="logo" href="index.html"><img src="./img/logo-white.svg" style="height: 25px;"
-          alt=""></a>
+      <a class="logo" href="index.html"><img src="./img/logo-white.svg" style="height: 25px;" alt=""></a>
       <a class="links" href="coming.html" alt="">works()</a>
       <a class="links" href="" alt="">contact()</a>
     </div>
     <div class="cencon">
       <h1>Contact</h1>
       <div class="conform">
-          <label for="user">Name</label>
-          <input type="text" class="formin" id="user">
-          <label for="email">Email address</label>
-          <input type="email" class="formin" id="email">
-          <label for="comment">Message</label>
-          <textarea class="formin" rows="6" id="comment"></textarea>
-          <input type="button" class="consub" onclick="sendmail();" id="submit" value="Send">
+        <label for="user">Name</label>
+        <input type="text" class="formin" id="user">
+        <label for="email">Email address</label>
+        <input type="email" class="formin" id="email">
+        <label for="comment">Message</label>
+        <textarea class="formin" rows="6" id="comment"></textarea>
+        <input type="button" class="consub" onclick="sendmail();" id="submit" value="Send">
       </div>
     </div>
     <div class="conbot">
-    <p class="conpa">Designed & Developed by <strong style="color: #bb4e55;">Shivam Rai</strong></p>
+      <p class="conpa">Designed & Developed by <strong style="color: #bb4e55;">Shivam Rai</strong></p>
     </div>
   </div>
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"> </script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
- 
-<script>
-     function sendmail(){
-      var user= document.getElementById("user").value;
-      var email= document.getElementById("email").value;
-      var message= document.getElementById("comment").value;
-      let result="Name: "+user+"\nEmail: "+email+"\nMessage: "+message;
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"> </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 
-			Email.send({
-        SecureToken:"fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
-				To: 'shivamrai0401@gmail.com',
-				From: "shivam0401rai@gmail.com",
-				Subject: "Respose from website..",
-				Body: result
-			}).then(
-				message =>{
-					//console.log (message);
-					if(message=='OK'){
-					alert('Thank you for connecting.. I will get back soon!!');
-					}
-					else{
-						console.error (message);
-						alert('There is error at sending message. ')	
-					}
-				}
-			);
-		}
-    </script>
- </script>
+  <script>
+    function sendmail() {
+      var user = document.getElementById("user").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("comment").value;
+      let result = "Name: " + user + "\nEmail: " + email + "\nMessage: " + message;
+
+      Email.send({
+        SecureToken: "fbf31702-bb7f-4a4e-9c1c-4ccf17ee777f",
+        To: 'shivamrai0401@gmail.com',
+        From: email,
+        Subject: "Respose from website..",
+        Body: result
+      }).then(
+        message => {
+          //console.log (message);
+          if (message == 'OK') {
+            alert('Your mail has been send. Thank you for connecting.');
+          } else {
+            console.error(message);
+            alert('There is error at sending message. ')
+          }
+        }
+      );
+    }
+  </script>
+  </script>
   </script>
 
 
 </body>
+
 </html>
