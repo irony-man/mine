@@ -437,9 +437,6 @@ body {
 .poptext{
   padding: 10px 0 0 10px;
   font-family: "ubuntu";
-  background-color: rgba(255, 99, 71, 0.63);
-  width: auto;
-  height: auto;
 }
 
 .galastars p {
