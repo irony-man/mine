@@ -9,4 +9,4 @@
 - The slider/carousel is implemented using SwiperJs.
 - The web page is made as close to pixel perfection as possible for the screen width of 1440.
 
-##### Developed by `Shivam Rai` (DIT University), Roll number: `190102114`
+Developed by `Shivam Rai` (DIT University), Roll number: `190102114`
